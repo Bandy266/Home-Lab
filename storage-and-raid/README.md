@@ -15,9 +15,9 @@ RAID 5 distributes parity across members and can tolerate one member failure und
 
 ## Troubleshooting and recovery
 
-An original member showed a SMART read-test failure and a bad sector. I replaced the degraded disk and rebuilt the existing array rather than creating a new filesystem. A reboot during recovery exposed a degraded array; I investigated it and later confirmed the server was operating. The original XFS mount and file-sharing path were retained.
+An original member showed a SMART read-test failure and a bad sector. I replaced the degraded disk and rebuilt the existing array rather than creating a new filesystem. A reboot during recovery exposed a degraded array; I investigated the replacement member metadata, corrected the issue and rebuilt the array. The October 16 recovery log records a successful subsequent reboot with all three members active. The original XFS mount and file-sharing path were retained.
 
-The historical array screenshot shows `[3/3] [UUU]`, `df -hT`, and the mounted filesystem. Later project records describe healthy RAID on October 31, but the separately dated final post-fix reboot transcript and complete file-content comparison are not part of this release.
+The historical array screenshot shows `[3/3] [UUU]`, `df -hT`, and the mounted filesystem. The October 16 written recovery log records successful post-fix reboot assembly (`[3/3] [UUU]`) and the XFS mount. The October 31 follow-up also records a healthy array. The included baseline image illustrates the original configuration rather than the later reboot test.
 
 ## Repeatable inspection procedure
 

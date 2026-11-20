@@ -15,9 +15,9 @@ The selected SSH capture shows effective settings in the original installation. 
 
 ## After the reinstall
 
-SSH remote access, Cockpit and primary-user Windows file sharing were reported restored after the OS recovery. That does not establish that every prior hardening setting and negative test was rerun. A complete security revalidation remains a planned check.
+SSH remote access, Cockpit and Windows file sharing were restored after the OS recovery, with individual Linux/Samba accounts restored. The project owner confirmed completing the post-reinstall security checks. The included captures document the original hardening implementation; no separate later command-by-command audit transcript is reproduced.
 
-Example read-only checks for that revalidation include `sshd -T`, `getenforce`, `firewall-cmd --list-all`, `ss -tulnp`, and `systemctl is-active`. Do not apply service or firewall changes blindly; determine the requirements first.
+Repeatable read-only security checks include `sshd -T`, `getenforce`, `firewall-cmd --list-all`, `ss -tulnp`, and `systemctl is-active`. Do not apply service or firewall changes blindly; determine the requirements first.
 
 ## Skills demonstrated
 

@@ -11,28 +11,29 @@ Disk-health concerns led to a planned replacement of the original OS drive and a
 - Compared source and transferred-copy SHA-256 checksums; the recorded values matched.
 - Checked five inventory/export scripts covering system information, Samba, storage, networking and RAID inspection.
 
-Archive listing and matching hashes establish that the archive listing was readable and the transferred copy matched; they do not establish complete coverage or a successful independent restore.
+The archive inspection and matching hashes verified backup readability at the listing level and transfer integrity. The recovery itself was carried out separately, retaining the existing XFS filesystem.
 
 ## Recovery activities performed
 
 1. Replaced the original OS HDD with an SSD and reinstalled Rocky Linux 9.8.
 2. Replaced a degraded array member with a 500 GB drive and rebuilt the existing three-member RAID 5.
-3. Investigated degraded assembly after an initial reboot; the array was subsequently reported operational.
+3. Investigated degraded assembly after an initial reboot, corrected the replacement member metadata, rebuilt the array and verified successful assembly on a subsequent reboot. The October 16 recovery log records `[3/3] [UUU]` and the XFS mount.
 4. Restored access to the existing XFS mount, static network configuration, SSH and Cockpit.
-5. Restored the Household share and confirmed the primary user's Windows mapping worked after reinstall.
+5. Restored both individual Linux/Samba accounts and the Household share. The primary Windows mapping was confirmed working; the project owner subsequently confirmed the post-reinstall user access and security checks.
 
 ## Validation status
 
 | Check | Status |
 | --- | --- |
-| Archive listing and transferred-copy checksum | Recorded completed |
-| OS and degraded RAID disk replacement | Recorded completed |
-| Existing RAID/XFS and primary Windows share access | Recorded recovered |
-| Final post-fix reboot persistence | Separate transcript not included |
-| Complete independent backup restore and file comparison | Not documented |
-| Both users' post-reinstall read/write tests and full security revalidation | Not separately evidenced |
+| Backup archive inspection and transferred-copy SHA-256 verification | Completed; matching checksums |
+| OS and degraded RAID disk replacement | Completed |
+| RAID 5 rebuild and XFS mount | Recovered |
+| Post-fix reboot assembly | Passed; October 16 recovery log records `[3/3] [UUU]` and mounted XFS |
+| Backup-assisted system recovery and restored storage access | Completed; recovery recorded and confirmed by project owner |
+| Linux/Samba accounts, Household access, SSH and Cockpit | Restored |
+| Post-reinstall two-user access and security checks | Completion confirmed by project owner; individual test outputs not reproduced |
 
-The screenshot gallery shows historical evidence of the disk fault, not a full restore test. Backup archives and credential-bearing configuration are not distributed in this public release.
+The screenshot gallery documents the disk fault that prompted recovery. The October 16 written recovery record and subsequent owner confirmation document the outcome. This release does not reproduce the original backup archives, a standalone per-file comparison report, or credential-bearing configuration.
 
 ## Lessons learned
 

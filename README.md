@@ -35,8 +35,8 @@ Existing local network (router settings unchanged)
 
 - Installed Rocky Linux, configured remote administration, and upgraded the server to 16 GB ECC memory.
 - Prepared a system backup before replacing a failing OS drive and a degraded RAID member; inspected the archive and verified the transferred copy with SHA-256.
-- Reinstalled the operating system and rebuilt the existing RAID 5 array without deliberately recreating the XFS filesystem; restored access to the shared filesystem and administrative services.
-- Resolved Samba access failures by investigating SELinux denials and correcting file contexts; demonstrated two-account read/write access in the original configuration.
+- Reinstalled the operating system and rebuilt the existing RAID 5 array without deliberately recreating the XFS filesystem; resolved a reboot-related RAID assembly issue and restored access to the shared filesystem, Samba and administrative services.
+- Resolved Samba access failures by investigating SELinux denials and correcting file contexts; demonstrated two-account read/write access and restored the individual user accounts and Samba access after reinstall.
 - Configured static IPv4 using NetworkManager and verified the gateway route and allowed services.
 - Validated key-based SSH and password rejection, inspected effective SSH settings, and removed unused RPC services during the initial security-hardening work.
 
@@ -50,14 +50,14 @@ Existing local network (router settings unchanged)
 | [Storage and RAID](storage-and-raid/README.md) | Software RAID, XFS, drive replacement and recovery |
 | [Samba file sharing](samba-file-sharing/README.md) | Authentication, permissions and SELinux troubleshooting |
 | [Security](security/README.md) | SSH hardening, least privilege and service exposure |
-| [Backup and recovery](backup-and-recovery/README.md) | Backup preparation, OS reinstall, RAID recovery and validation limits |
+| [Backup and recovery](backup-and-recovery/README.md) | Backup integrity checks, OS reinstall, RAID recovery and restored services |
 | [Evidence index](EVIDENCE.md) | Screenshot provenance and what each capture proves |
 
 ## Verification and scope
 
 This release focuses on the core infrastructure work recorded through November 2, 2026. Screenshots from the original configuration are distinguished from later recovery records. The October 31 RAM/RAID capture is described in the project records but is not included here as an image. Application-hosting work is outside this edition.
 
-A complete independent backup-restore test, a separate final post-fix RAID reboot transcript, and a comprehensive post-reinstall security and two-user access retest are not claimed. Future work includes additional validation and virtualization.
+The recovery work was completed in October 2026. The October 16 recovery log records successful RAID assembly after reboot, and the project owner confirmed the post-reinstall access and recovery checks. The included screenshots illustrate selected historical tests; written recovery records supplement them. Archive transfer integrity was verified with SHA-256; a separate itemized file-by-file audit is not reproduced here. Future work includes virtualization.
 
 ## Author
 

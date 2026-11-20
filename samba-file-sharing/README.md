@@ -17,7 +17,7 @@ I configured two household users with individual Linux and Samba accounts and gr
 
 The share was initially inaccessible. I investigated the Samba journal and audit denials, found an incorrect filesystem context, configured an appropriate persistent Samba file context, and applied it using `restorecon`. I verified `samba_share_t` on the storage path and tested the share with `smbclient`.
 
-The original captured tests show both accounts creating, listing and removing test directories. The tests demonstrate successful write operations in the pre-reinstallation configuration. Later project records confirm access through the primary user's Windows mapping after reinstall; another complete two-user test was not captured.
+The original captured tests show both accounts creating, listing and removing test directories. The tests demonstrate successful write operations in the pre-reinstallation configuration. After reinstall, both individual Linux/Samba accounts were restored and access through the primary user's Windows mapping was confirmed. The project owner also confirmed completion of the post-reinstall two-user access checks. The selected image shows the original tests, not the later ones.
 
 ## Diagnostic procedure
 
