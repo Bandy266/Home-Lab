@@ -11,22 +11,20 @@
 
 ## Verification
 
-The selected SSH capture shows effective settings in the original installation. The [SSH login test](../linux-administration/screenshots/ssh-key-login-and-password-rejection.png) shows public-key authentication succeeding and a password-only attempt being rejected. The [service audit](../linux-administration/screenshots/rpc-service-audit.png) records inactive RPC units after disabling them and active SSH, Samba and Cockpit socket services. The [Samba case study](../samba-file-sharing/README.md) documents security-context troubleshooting.
+My selected SSH capture shows effective settings in the original installation. The [SSH login test](../linux-administration/screenshots/ssh-key-login-and-password-rejection.png) shows public-key authentication succeeding and a password-only attempt being rejected. The [service audit](../linux-administration/screenshots/rpc-service-audit.png) records inactive RPC units after disabling them and active SSH, Samba and Cockpit socket services. The [Samba case study](../samba-file-sharing/README.md) documents security-context troubleshooting.
 
 ## After the reinstall
 
-SSH remote access, Cockpit and Windows file sharing were restored after the OS recovery, with individual Linux/Samba accounts restored. The project owner confirmed completing the post-reinstall security checks. The included captures document the original hardening implementation; no separate later command-by-command audit transcript is reproduced.
+I restored SSH remote access, Cockpit, Windows file sharing and both individual Linux/Samba accounts after the OS recovery. I completed the post-reinstall security checks. My screenshots document the original hardening implementation; I describe the later checks in writing.
 
-Repeatable read-only security checks include `sshd -T`, `getenforce`, `firewall-cmd --list-all`, `ss -tulnp`, and `systemctl is-active`. Do not apply service or firewall changes blindly; determine the requirements first.
+I use read-only security checks such as `sshd -T`, `getenforce`, `firewall-cmd --list-all`, `ss -tulnp`, and `systemctl is-active`. I check service requirements before making firewall or service changes.
 
-## Skills demonstrated
+## Skills I demonstrated
 
 Authentication hardening, least privilege, SELinux access control, firewall/service inspection and documenting validation boundaries.
 
 ## Evidence
 
 [Screenshot gallery](screenshots/README.md).
-
-
 
 [Back to project overview](../README.md).

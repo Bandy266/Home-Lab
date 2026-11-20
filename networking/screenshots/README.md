@@ -1,9 +1,9 @@
 # Networking — screenshot evidence
 
-These are selected historical captures, cropped for readability and masked where necessary. They are not new tests.
+I captured this evidence during my original configuration and testing. I cropped the images for readability and masked identifiers where necessary.
 
 ![static ip and gateway test](static-ip-and-gateway-test.png)
 
-*Historical manual IPv4 configuration, route inspection, four successful gateway replies and allowed services. Private RFC1918 LAN addresses are retained.*
+*I configured static IPv4, inspected routes and allowed services, and verified four successful gateway replies. Private RFC1918 LAN addresses are retained.*
 
 [Back to technical documentation](../README.md).

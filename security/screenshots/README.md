@@ -1,9 +1,9 @@
 # Security — screenshot evidence
 
-These are selected historical captures, cropped for readability and masked where necessary. They are not new tests.
+I captured this evidence during my original configuration and testing. I cropped the images for readability and masked identifiers where necessary.
 
 ![effective ssh hardening](effective-ssh-hardening.png)
 
-*Historical sshd -T output showing three authentication attempts, root and password login disabled, keyboard-interactive and X11 forwarding disabled; public key authentication shown enabled in earlier output.*
+*I inspected effective SSH settings using `sshd -T`: three authentication attempts, root and password login disabled, and keyboard-interactive and X11 forwarding disabled. Earlier output showed public-key authentication enabled.*
 
 [Back to technical documentation](../README.md).

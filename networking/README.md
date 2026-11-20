@@ -11,13 +11,13 @@
 | Remote administration | SSH (`homeserver` client shortcut) and Cockpit |
 | File sharing | SMB using Samba |
 
-I confirmed the existing network configuration and preserved the router settings. No router administration changes are claimed.
+I confirmed the existing network configuration and left the router settings unchanged.
 
 ## Troubleshooting
 
-The initial system used DHCP. I investigated interface state, corrected NetworkManager command syntax, checked candidate addresses using ping and ARP, and configured manual IPv4 settings for the server. The retained historical screenshot shows the static address, default route, four received gateway replies with 0% packet loss, and firewall allowed-service inspection.
+The initial system used DHCP. I investigated interface state, corrected NetworkManager command syntax, checked candidate addresses using ping and ARP, and configured manual IPv4 settings for the server. My original screenshot shows the static address, default route, four received gateway replies with 0% packet loss, and firewall allowed-service inspection.
 
-An unanswered ARP or ICMP probe is not a guarantee that a future DHCP conflict cannot occur. The project's addressing plan should be reviewed if the DHCP scope changes.
+An unanswered ARP or ICMP probe is not a guarantee that a future DHCP conflict cannot occur. I will review my addressing plan if the DHCP scope changes.
 
 ## Repeatable diagnostics
 
@@ -29,16 +29,14 @@ ip route
 sudo firewall-cmd --list-services
 ```
 
-These commands are an inspection procedure; the attached capture records the original test. RFC1918 addresses remain visible in the selected capture. No public WAN address or router-specific identification is included.
+I use these commands to inspect network configuration. My screenshot records the original test and retains private RFC1918 addresses; it includes no public WAN address or router-specific identifiers.
 
-## Skills demonstrated
+## Skills I demonstrated
 
 IPv4 addressing, DHCP versus static configuration, route inspection, connectivity testing, NetworkManager and service exposure checks.
 
 ## Evidence
 
 [Screenshot gallery](screenshots/README.md).
-
-
 
 [Back to project overview](../README.md).

@@ -15,13 +15,13 @@ RAID 5 distributes parity across members and can tolerate one member failure und
 
 ## Troubleshooting and recovery
 
-An original member showed a SMART read-test failure and a bad sector. I replaced the degraded disk and rebuilt the existing array rather than creating a new filesystem. A reboot during recovery exposed a degraded array; I investigated the replacement member metadata, corrected the issue and rebuilt the array. The October 16 recovery log records a successful subsequent reboot with all three members active. The original XFS mount and file-sharing path were retained.
+An original member showed a SMART read-test failure and a bad sector. I replaced the degraded disk and rebuilt the existing array rather than creating a new filesystem. A reboot during recovery exposed a degraded array; I investigated the replacement member metadata, corrected the issue and rebuilt the array. I verified successful assembly on a subsequent reboot, as recorded in my October 16 recovery log, and retained the original XFS mount and file-sharing path.
 
-The historical array screenshot shows `[3/3] [UUU]`, `df -hT`, and the mounted filesystem. The October 16 written recovery log records successful post-fix reboot assembly (`[3/3] [UUU]`) and the XFS mount. The October 31 follow-up also records a healthy array. The included baseline image illustrates the original configuration rather than the later reboot test.
+My original array screenshot shows `[3/3] [UUU]`, `df -hT`, and the mounted filesystem. My October 16 written recovery log records successful post-fix reboot assembly (`[3/3] [UUU]`) and the XFS mount. I also recorded a healthy array on October 31. My baseline image illustrates the original configuration; my written records cover the later reboot test.
 
 ## Repeatable inspection procedure
 
-The following are read-only inspection commands, not a fresh execution log:
+I use the following read-only commands for repeatable storage inspection:
 
 ```bash
 lsblk -f
@@ -31,9 +31,9 @@ findmnt /srv/storage
 df -hT /srv/storage
 ```
 
-The recovery approach prioritizes confirming drive identity, protecting the existing filesystem, and checking array state before any destructive operation.
+My recovery approach prioritizes confirming drive identity, protecting the existing filesystem, and checking array state before any destructive operation.
 
-## Skills demonstrated
+## Skills I demonstrated
 
 Software RAID, storage diagnostics, XFS mount inspection, disk replacement, troubleshooting and recovery planning.
 

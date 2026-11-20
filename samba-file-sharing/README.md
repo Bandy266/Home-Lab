@@ -17,7 +17,7 @@ I configured two household users with individual Linux and Samba accounts and gr
 
 The share was initially inaccessible. I investigated the Samba journal and audit denials, found an incorrect filesystem context, configured an appropriate persistent Samba file context, and applied it using `restorecon`. I verified `samba_share_t` on the storage path and tested the share with `smbclient`.
 
-The original captured tests show both accounts creating, listing and removing test directories. The tests demonstrate successful write operations in the pre-reinstallation configuration. After reinstall, both individual Linux/Samba accounts were restored and access through the primary user's Windows mapping was confirmed. The project owner also confirmed completion of the post-reinstall two-user access checks. The selected image shows the original tests, not the later ones.
+I tested both accounts by creating, listing and removing test directories in the original configuration. After reinstall, I restored both individual Linux/Samba accounts, verified the primary Windows mapping and completed the two-user access checks. My selected screenshot shows the original tests; I document the later checks in writing.
 
 ## Diagnostic procedure
 
@@ -29,9 +29,9 @@ sudo journalctl -u smb --no-pager
 sudo ausearch -m AVC,USER_AVC -ts recent
 ```
 
-Access configuration should be reviewed after reinstall rather than assumed intact. The procedure above is not a new execution transcript.
+I review access configuration after reinstallation rather than assuming it is intact. I keep these commands as a repeatable diagnostic procedure.
 
-## Skills demonstrated
+## Skills I demonstrated
 
 Linux users and groups, SMB authentication, setgid permissions, SELinux diagnostics, and access testing.
 

@@ -12,16 +12,16 @@
 | Original OS disk | 320 GB HDD, retired after failure concerns |
 | Data drives | Two original 250 GB disks and one replacement 500 GB Seagate ST500DM009 |
 
-The platform was selected for practical experience with existing enterprise hardware. I chose a memory upgrade rather than a CPU replacement; extending the usefulness of the existing machine was more valuable than a small processor upgrade.
+I selected this platform to gain practical experience with existing enterprise hardware. I chose a memory upgrade rather than a CPU replacement; extending the usefulness of the existing machine was more valuable than a small processor upgrade.
 
 ## Results and limitations
 
-The 16 GB kit was installed on October 31, 2026. Project records describe `free -h` reporting 15 GiB usable; this is not a memory stress test. The original capture is not included in this public snapshot. The SSD's exact capacity is not asserted here.
+I installed the 16 GB kit on October 31, 2026 and recorded `free -h` reporting 15 GiB usable. This verified recognized memory capacity, not memory stress-test results. I documented the check in my project records; the original image is not included in this edition.
 
-The degraded data member was replaced; the two smaller RAID members still limit capacity. See [storage and RAID](../storage-and-raid/README.md) for the recovery and array layout.
+I replaced the degraded data member; the two smaller RAID members still limit capacity. See [storage and RAID](../storage-and-raid/README.md) for the recovery and array layout.
 
 ## Evidence
 
-The [SMART diagnostic capture](../backup-and-recovery/screenshots/smart-read-failure.png) documents the original data-disk health warning. No standalone RAM image is included.
+The [SMART diagnostic capture](../backup-and-recovery/screenshots/smart-read-failure.png) documents the original data-disk health warning. My RAM upgrade is documented in writing in this edition.
 
 [Back to project overview](../README.md).

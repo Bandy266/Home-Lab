@@ -2,7 +2,7 @@
 
 **Linux system administration · Storage and disaster recovery · Network services · Security**
 
-I built and administer a Rocky Linux home server to develop practical IT and cybersecurity skills. The project includes deploying network file storage, troubleshooting access and disk failures, recovering services after a hardware replacement, and documenting results with real technical evidence.
+I built and administer a Rocky Linux home server to develop practical IT and cybersecurity skills. I deployed network file storage, troubleshot access and disk failures, recovered services after hardware replacement, and documented my results with technical evidence.
 
 ## Project at a glance
 
@@ -31,7 +31,7 @@ Existing local network (router settings unchanged)
           `-- Access: individual accounts, fileshare group, SELinux, firewalld
 ```
 
-## Selected accomplishments
+## My accomplishments
 
 - Installed Rocky Linux, configured remote administration, and upgraded the server to 16 GB ECC memory.
 - Prepared a system backup before replacing a failing OS drive and a degraded RAID member; inspected the archive and verified the transferred copy with SHA-256.
@@ -55,9 +55,9 @@ Existing local network (router settings unchanged)
 
 ## Verification and scope
 
-This release focuses on the core infrastructure work recorded through November 2, 2026. Screenshots from the original configuration are distinguished from later recovery records. The October 31 RAM/RAID capture is described in the project records but is not included here as an image. Application-hosting work is outside this edition.
+I documented my core infrastructure work through November 2, 2026. I distinguish screenshots from the original configuration from my later recovery records, including the October 31 RAM/RAID check, which I describe in writing. This edition focuses on infrastructure rather than application hosting.
 
-The recovery work was completed in October 2026. The October 16 recovery log records successful RAID assembly after reboot, and the project owner confirmed the post-reinstall access and recovery checks. The included screenshots illustrate selected historical tests; written recovery records supplement them. Archive transfer integrity was verified with SHA-256; a separate itemized file-by-file audit is not reproduced here. Future work includes virtualization.
+I completed the recovery in October 2026. My October 16 recovery log records successful RAID assembly after reboot, and I completed the post-reinstall access and recovery checks. My screenshots illustrate selected tests, supplemented by my written recovery records. I verified archive transfer integrity with SHA-256; this edition does not include a separate itemized file-by-file comparison report. My future work includes virtualization.
 
 ## Author
 

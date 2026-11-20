@@ -1,13 +1,13 @@
 # Samba File Sharing — screenshot evidence
 
-These are selected historical captures, cropped for readability and masked where necessary. They are not new tests.
+I captured this evidence during my original configuration and testing. I cropped the images for readability and masked identifiers where necessary.
 
 ![shared directory permissions](shared-directory-permissions.png)
 
-*Historical fileshare group, root:fileshare ownership, setgid 2770 and directory inspection.*
+*I inspected the `fileshare` group, `root:fileshare` ownership and setgid `2770` permissions on the shared directory.*
 
 ![selinux and two user write tests](selinux-and-two-user-write-tests.png)
 
-*Historical SELinux context correction and creation/listing/removal of test directories by two SMB accounts; identities masked; pre-reinstall tests only.*
+*I corrected the SELinux context and tested directory creation, listing and removal using both SMB accounts before reinstall. Identities are masked.*
 
 [Back to technical documentation](../README.md).

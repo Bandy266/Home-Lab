@@ -1,13 +1,13 @@
 # Linux Administration — screenshot evidence
 
-These are selected historical captures, cropped for readability and masked where necessary. They are not new tests.
+I captured this evidence during my original configuration and testing. I cropped the images for readability and masked identifiers where necessary.
 
 ![ssh key login and password rejection](ssh-key-login-and-password-rejection.png)
 
-*Historical successful SSH key login and refused password-only login; local account names and client key path masked.*
+*I verified successful SSH key login and rejection of password-only login. Local account names and the client key path are masked.*
 
 ![rpc service audit](rpc-service-audit.png)
 
-*Historical removal of unused RPC service/socket, inactive status and active SSH, SMB and Cockpit socket verification.*
+*I disabled unused RPC units and verified their inactive status alongside active SSH, SMB and Cockpit socket services.*
 
 [Back to technical documentation](../README.md).
