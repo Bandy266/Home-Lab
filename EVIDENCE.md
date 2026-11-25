@@ -15,4 +15,8 @@ I selected these original captures from my home lab records. They show the confi
 
 The private RFC1918 addressing shown in the LAN evidence is not a public WAN address. I documented the RAM/RAID follow-up in my written records; the original capture is not included here. My October 16 recovery log records a successful post-fix RAID reboot, and I completed subsequent recovery, user-access and security checks. This edition does not include a standalone itemized file-comparison report or later security command transcript.
 
+## Additional Windows workstation evidence
+
+I documented a separate November 25 Windows endpoint optimization in my [Windows case study](windows-endpoint-optimization/README.md). Its [evidence index](windows-endpoint-optimization/EVIDENCE.md) records the original and final measurements and explains which underlying captures and reports are retained privately rather than included as public image files.
+
 [Back to project overview](README.md).

@@ -53,9 +53,15 @@ Existing local network (router settings unchanged)
 | [Backup and recovery](backup-and-recovery/README.md) | Backup integrity checks, OS reinstall, RAID recovery and restored services |
 | [Evidence index](EVIDENCE.md) | Screenshot provenance and what each capture proves |
 
+## Additional project: Windows workstation optimization (November 25, 2026)
+
+I also completed a separate Windows 11 endpoint optimization and PowerShell maintenance automation project on my Ryzen 9 5900X gaming/virtualization workstation. I built an eight-script maintenance toolkit, backed up service and task settings, registered routine audits, and recorded the following resource changes: **283 → 186 processes**, **129 → 109 running services**, and **11.83 → 6.64 GB of used RAM**. I retained Hyper-V and required gaming software. Final compatibility and unattended-task acceptance tests remain outstanding; the numbers are resource measurements, not proven FPS improvements.
+
+[Read my Windows 11 optimization case study](windows-endpoint-optimization/README.md) · [Evidence and limitations](windows-endpoint-optimization/EVIDENCE.md)
+
 ## Verification and scope
 
-I documented my core infrastructure work through November 2, 2026. I distinguish screenshots from the original configuration from my later recovery records, including the October 31 RAM/RAID check, which I describe in writing. This edition focuses on infrastructure rather than application hosting.
+For the Rocky Linux server, I documented my core infrastructure work through November 2, 2026. I distinguish screenshots from the original configuration from my later recovery records, including the October 31 RAM/RAID check, which I describe in writing. This edition focuses on infrastructure rather than application hosting.
 
 I completed the recovery in October 2026. My October 16 recovery log records successful RAID assembly after reboot, and I completed the post-reinstall access and recovery checks. My screenshots illustrate selected tests, supplemented by my written recovery records. I verified archive transfer integrity with SHA-256; this edition does not include a separate itemized file-by-file comparison report. My future work includes virtualization.
 
