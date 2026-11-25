@@ -19,4 +19,8 @@ The private RFC1918 addressing shown in the LAN evidence is not a public WAN add
 
 I documented a separate November 25 Windows endpoint optimization in my [Windows case study](windows-endpoint-optimization/README.md). Its [evidence index](windows-endpoint-optimization/EVIDENCE.md) records the original and final measurements and explains which underlying captures and reports are retained privately rather than included as public image files.
 
+## Windows workstation optimization evidence
+
+I published the two original console captures from my November 25, 2026 Windows endpoint optimization report: [initial baseline](windows-endpoint-optimization/screenshots/initial-system-baseline-2026-11-25.png) and [final performance comparison](windows-endpoint-optimization/screenshots/final-performance-comparison-2026-11-25.png). I extracted these images from the source Word appendix without altering their pixels. They show observed resource measurements on my **separate Windows 11 workstation**, not the Dell PowerEdge T110. The [screenshot gallery](windows-endpoint-optimization/screenshots/README.md) describes what the captures support; raw logs and configuration backups remain private.
+
 [Back to project overview](README.md).

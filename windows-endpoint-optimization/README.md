@@ -73,7 +73,7 @@ During toolkit testing, Defender real-time protection, tamper protection, all th
 
 ## Evidence and files
 
-My private project report includes two genuine November 25 console captures: an initial baseline and the final PowerShell measurement. I am keeping raw logs, original task XML exports, and service backups **local** while preparing a privacy-reviewed, public evidence selection. See [Evidence and provenance](EVIDENCE.md) for exactly what is—and is not—in this repository.
+I extracted the two original console-capture images from my November 25 report and published them here as [Figure W1 — initial baseline](screenshots/initial-system-baseline-2026-11-25.png) and [Figure W2 — final performance comparison](screenshots/final-performance-comparison-2026-11-25.png). I preserved their embedded PNG pixels; the original Word report had already cropped them to the console output. See my [screenshot gallery](screenshots/README.md) and [evidence index](EVIDENCE.md) for context and limitations. I keep raw logs, the baseline JSON, original task XML exports, and service backups **local**.
 
 **Skills demonstrated:** Windows endpoint administration, PowerShell automation, Task Scheduler, change control and rollback planning, startup/service management, security-aware troubleshooting, quantitative resource measurement, and technical documentation.
 
