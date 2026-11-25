@@ -1,0 +1,7 @@
+# Runtime output is machine-specific and can contain personal or sensitive data.
+/Logs/
+/Reports/
+/Backups/
+*.log
+*.csv
+*.json

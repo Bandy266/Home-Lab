@@ -10,6 +10,7 @@
 | `Performance-History.csv` | Historical measurements | Kept on the Windows workstation, not published |
 | `Performance-Report_2026-11-25_10-48-29.txt` | Final resource report | Kept on the Windows workstation, not published |
 | Service settings and scheduled-task XML exports | Rollback records | Kept private |
+| PowerShell toolkit source (menu and eight modules) | Reviewed copies of the code used for the maintenance toolkit | [Published in this repository](scripts/README.md); generated logs, reports, backups and baseline remain private |
 
 The underlying records are stored under `C:\Scripts\Windows-Maintenance\`, particularly the `Reports` and `Backups` subdirectories. The companion source document is titled `Windows_Endpoint_Optimization_Portfolio_2026-11-25.docx`.
 

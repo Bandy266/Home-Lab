@@ -34,6 +34,10 @@ I created a local toolkit at `C:\Scripts\Windows-Maintenance\` with `Scripts`, `
 
 I registered **weekly system and performance audits** plus a **monthly startup audit** in Task Scheduler. The monthly trigger required a native Task Scheduler COM interface workaround after a CIM cmdlet approach failed. The three tasks reported **Ready**; I have not yet confirmed that all scheduled runs execute successfully without intervention.
 
+## Published PowerShell source
+
+I have published the [nine PowerShell source files](scripts/README.md) used in my workstation maintenance toolkit: the main menu and eight administration modules. The public copies include a small output-directory initialization step so a clean checkout can create its own local `Logs`, `Reports`, and `Backups` folders. Runtime logs and machine-specific baselines remain private, and this source publication does not imply the outstanding acceptance tests have been completed.
+
 ## Controlled configuration changes
 
 - Removed CCleaner, Advanced SystemCare, IObit Uninstaller, Armoury Crate, and Hamachi. I inspected leftover directories and retained a backup of the identified IObit promotional task before removing it.
